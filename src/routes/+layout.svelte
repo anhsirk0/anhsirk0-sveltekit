@@ -7,7 +7,6 @@
   <div class="drawer drawer-mobile">
     <input id="sidebar" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content min-h-screen">
-      <!-- Navbar -->
       <div class="lg:hidden w-full navbar bg-base-300 sticky inset-0 z-50">
         <div class="flex-none lg:hidden">
           <label for="sidebar" class="btn btn-square btn-ghost">
@@ -37,7 +36,7 @@
     <div class="drawer-side">
       <label for="sidebar" class="drawer-overlay" />
       <ul
-        class="menu p-4 overflow-y-auto w-56 md:w-80 lg:w-64 2xl:w-80 bg-base-200 text-base-content space-y-2"
+        class="menu p-4 overflow-y-auto w-60 md:w-80 lg:w-60 2xl:w-80 bg-base-200 space-y-2"
       >
         <!-- Sidebar content here -->
         <SidebarContent />

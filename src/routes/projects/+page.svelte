@@ -13,7 +13,7 @@
 
   let projects = [
     {
-      title: "Fetch master 6000",
+      title: "Fetch-master-6000",
       desc: "Simple Dilbert themed system information fetching tool for Linux and BSD based systems.",
       lang: "perl.png",
       url: "https://github.com/anhsirk0/fetch-master-6000",
@@ -31,16 +31,22 @@
       url: "https://github.com/anhsirk0/pere",
     },
     {
+      title: "Whatsapp-svelte",
+      desc: "WhatsApp mockup screens using Tailwind, DaisyUI and Sveltekit.",
+      lang: "svelte.png",
+      url: "https://github.com/anhsirk0/whatsapp-svelte",
+    },
+    {
       title: "Slider-login-signup",
       desc: "Login/Signup design with a slider animation made with tailwindcss and nextjs.",
       lang: "js.png",
       url: "https://github.com/anhsirk0/slider-login-signup",
     },
     {
-      title: "Quote-uploader",
-      desc: "Create slideshow of images from brainyquote and upload to dailymotion.",
-      lang: "bash.png",
-      url: "https://github.com/anhsirk0/quote-uploader",
+      title: "Mosaic-rust",
+      desc: "Rust program to create photomosaics (image made of smaller images as mosaic tiles).",
+      lang: "rust.png",
+      url: "https://github.com/anhsirk0/mosaic-rust",
     },
     {
       title: "News-cli",
@@ -49,16 +55,28 @@
       url: "https://github.com/anhsirk0/news-cli",
     },
     {
-      title: "Photomosaic",
-      desc: "Python program to create photomosaics (image made of smaller images as mosaic tiles).",
-      lang: "python.png",
-      url: "https://github.com/anhsirk0/photomosaic-python",
+      title: "Solus-awesome",
+      desc: "Simple bash script to build & install awesomewm on Solus Linux.",
+      lang: "bash.png",
+      url: "https://github.com/anhsirk0/solus-awesome",
+    },
+    {
+      title: "Quote-uploader",
+      desc: "Create slideshow of images from brainyquote and upload to dailymotion.",
+      lang: "bash.png",
+      url: "https://github.com/anhsirk0/quote-uploader",
     },
     {
       title: "Kakoune-themes",
-      desc: "Color schemes for kakoune , extra syntax highlighting and my config.",
+      desc: "Beautiful color schemes for kakoune text editor.",
       lang: "kakounescript",
       url: "https://github.com/anhsirk0/kakoune-themes",
+    },
+    {
+      title: "Awesome-config",
+      desc: "My config for the awesome window manager.",
+      lang: "lua.png",
+      url: "https://github.com/anhsirk0/awesome-config",
     },
     {
       title: "Django projects",
@@ -74,7 +92,7 @@
     },
     {
       title: "This website",
-      desc: "Source code for this website. https://anhsirk0.herokuapp.com",
+      desc: "Source code for this website. (anhsirk0.github.io & anhsirk0.herokuapp.com)",
       lang: "svelte.png",
       url: "https://github.com/anhsirk0/anhsirk0-sveltekit",
     },
@@ -87,11 +105,11 @@
 
 <div
   in:fade
-  class="grid grid-cols-6 gap-4 lg:gap-6 2xl:gap-8 w-[86vw] lg:w-[66vw] xl:w-[70vw] mb-8 lg:my-0 lg:p-8 mt-4"
+  class="grid grid-cols-6 gap-4 lg:gap-6 2xl:gap-8 w-[86vw] lg:w-[66vw] xl:w-[76vw] 2xl:w-[70vw] my-4 lg:my-3 2xl:my-4 lg:p-8"
 >
   {#each projects as project (project.title)}
     <div
-      class="card bg-base-200 hover:ring-2 hover:ring-primary col-span-6 md:col-span-3 2xl:col-span-2"
+      class="card bg-base-200 hover:ring-2 hover:ring-primary col-span-6 md:col-span-2 2xl:col-span-2"
     >
       <div class="card-body p-4 lg:p-6 2xl:p-8">
         <div class="flex flex-row gap-4 mb-1 xl:mb-2">
