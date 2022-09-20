@@ -92,7 +92,7 @@
     },
     {
       title: "This website",
-      desc: "Source code for this website. (anhsirk0.github.io & anhsirk0.herokuapp.com)",
+      desc: "Source code for this website. (anhsirk0.github.io)",
       lang: "svelte.png",
       url: "https://github.com/anhsirk0/anhsirk0-sveltekit",
     },
