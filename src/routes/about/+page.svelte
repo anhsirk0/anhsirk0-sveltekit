@@ -65,12 +65,12 @@
           online.
           <br />
           I am a <span class="text-primary">Computer Science </span> student at
-          Kurukshetra University from <span class="text-primary">India</span> .
-          I have been enjoying programming for about
+          Kurukshetra University from <span class="text-primary">India</span>. I
+          have been enjoying programming for about
           <span class="text-primary">4</span>
           years, mostly as a
           <span class="text-primary">Web developer</span>
-          and messing around with <span class="text-primary">GNU/Linux</span> .
+          and messing around with <span class="text-primary">GNU/Linux</span>.
         </p>
       </div>
     </div>
