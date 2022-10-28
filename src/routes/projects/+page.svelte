@@ -11,90 +11,111 @@
     );
   };
 
+  // TODO extract projects to a json file
   let projects = [
     {
       title: "Fetch-master-6000",
       desc: "Simple Dilbert themed system information fetching tool for Linux and BSD based systems.",
       lang: "perl.png",
-      url: "https://github.com/anhsirk0/fetch-master-6000",
+      src: "https://github.com/anhsirk0/fetch-master-6000",
     },
     {
       title: "Arranger",
       desc: "Simple and capable Files and Directory arranger/cleaner.",
       lang: "perl.png",
-      url: "https://github.com/anhsirk0/file-arranger",
+      src: "https://github.com/anhsirk0/file-arranger",
     },
     {
       title: "Pere",
       desc: "Pere is a bulk file renamer written in Perl.",
       lang: "perl.png",
-      url: "https://github.com/anhsirk0/pere",
+      src: "https://github.com/anhsirk0/pere",
     },
     {
       title: "Whatsapp-svelte",
       desc: "WhatsApp mockup screens using Tailwind, DaisyUI and Sveltekit.",
       lang: "svelte.png",
-      url: "https://github.com/anhsirk0/whatsapp-svelte",
+      src: "https://github.com/anhsirk0/whatsapp-svelte",
+      url: "https://anhsirk0-whatsapp.netlify.com",
     },
     {
       title: "Slider-login-signup",
       desc: "Login/Signup design with a slider animation made with tailwindcss and nextjs.",
       lang: "js.png",
-      url: "https://github.com/anhsirk0/slider-login-signup",
+      src: "https://github.com/anhsirk0/slider-login-signup",
+    },
+    {
+      title: "Ts-projects",
+      desc: "Some Typescript projects as NextJs pages",
+      lang: "ts.png",
+      src: "https://github.com/anhsirk0/ts-projects",
+      url: "https://anhsirk0-ts-projects.netlify.com",
     },
     {
       title: "Mosaic-rust",
       desc: "Rust program to create photomosaics (image made of smaller images as mosaic tiles).",
       lang: "rust.png",
-      url: "https://github.com/anhsirk0/mosaic-rust",
+      src: "https://github.com/anhsirk0/mosaic-rust",
+    },
+    {
+      title: "Lyapunov",
+      desc: "Rust program to generate lyapunov fractals",
+      lang: "rust.png",
+      src: "https://github.com/anhsirk0/lyapunov",
+    },
+    {
+      title: "Mandelbrot",
+      desc: "Rust program to generate mandelbrot fractals",
+      lang: "rust.png",
+      src: "https://github.com/anhsirk0/mandelbrot",
     },
     {
       title: "News-cli",
       desc: "News and article viewing utility using New-York times API.",
       lang: "rust.png",
-      url: "https://github.com/anhsirk0/news-cli",
+      src: "https://github.com/anhsirk0/news-cli",
     },
     {
       title: "Solus-awesome",
       desc: "Simple bash script to build & install awesomewm on Solus Linux.",
       lang: "bash.png",
-      url: "https://github.com/anhsirk0/solus-awesome",
+      src: "https://github.com/anhsirk0/solus-awesome",
     },
     {
       title: "Quote-uploader",
       desc: "Create slideshow of images from brainyquote and upload to dailymotion.",
       lang: "bash.png",
-      url: "https://github.com/anhsirk0/quote-uploader",
+      src: "https://github.com/anhsirk0/quote-uploader",
     },
     {
       title: "Kakoune-themes",
       desc: "Beautiful color schemes for kakoune text editor.",
       lang: "kakounescript",
-      url: "https://github.com/anhsirk0/kakoune-themes",
+      src: "https://github.com/anhsirk0/kakoune-themes",
     },
     {
       title: "Awesome-config",
       desc: "My config for the awesome window manager.",
       lang: "lua.png",
-      url: "https://github.com/anhsirk0/awesome-config",
+      src: "https://github.com/anhsirk0/awesome-config",
     },
     {
       title: "Django projects",
       desc: "Some Django projects for CS50 submissions.",
       lang: "python.png",
-      url: "https://github.com/anhsirk0/django-projects",
+      src: "https://github.com/anhsirk0/django-projects",
     },
     {
       title: "Pygames",
       desc: "Some simple 2D games made with Pygame.",
       lang: "python.png",
-      url: "https://github.com/anhsirk0/pygames",
+      src: "https://github.com/anhsirk0/pygames",
     },
     {
       title: "This website",
       desc: "Source code for this website. (anhsirk0.github.io)",
       lang: "svelte.png",
-      url: "https://github.com/anhsirk0/anhsirk0-sveltekit",
+      src: "https://github.com/anhsirk0/anhsirk0-sveltekit",
     },
   ];
 </script>
@@ -134,8 +155,32 @@
         <p class="2xl:text-xl">
           {project.desc}
         </p>
-        <div class="ml-auto">
-          <a href={project.url} target="_blank">
+        <div class="ml-auto flex items-center flex-row gap-4">
+          <div class="grow" />
+          {#if project.url}
+            <a
+              class="h-10 2xl:h-12 w-10 2xl:w-12 p-1.5 2xl:p-2 bg-neutral-focus rounded-lg flex items-center justify-center"
+              href={project.url}
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 2xl:w-7 h-6 2xl:h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </a>
+          {/if}
+
+          <a href={project.src} target="_blank">
             <img
               class="h-10 2xl:h-12 rounded-lg bg-neutral-focus p-1 2xl:p-2"
               alt="View on github"

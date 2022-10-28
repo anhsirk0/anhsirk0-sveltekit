@@ -14,9 +14,10 @@
   let languages = [
     { title: "Bash", img: "bash.png", url: "https://gnu.org/software/bash" },
     javascript,
+    { title: "Typescript", img: "ts.png", url: "https://typescriptlang.org" },
     { title: "Perl", img: "perl.png", url: "https://perl.org" },
     { title: "Python", img: "python.png", url: "https://python.org" },
-    { title: "R", img: "r.png", url: "https://r-project.org/" },
+    // { title: "R", img: "r.png", url: "https://r-project.org/" },
     { title: "Rust", img: "rust.png", url: "https://rust-lang.org" },
   ];
 
@@ -62,7 +63,7 @@
 
 <div
   in:fade
-  class="grid grid-cols-12 gap-4 lg:gap-6 2xl:gap-8 w-[86vw] lg:w-[77vw] 2xl:w-[70vw] mb-8 lg:my-0 lg:p-8 mt-4"
+  class="grid grid-cols-12 gap-4 lg:gap-6 2xl:gap-8 w-[86vw] lg:w-[79vw] 2xl:w-[70vw] mb-8 lg:my-0 lg:p-8 mt-4"
 >
   <div class="col-span-12 xl:col-span-7 flex flex-col gap-4 lg:gap-6 2xl:gap-8">
     <TechCard title="Languages" items={languages} />
