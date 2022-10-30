@@ -43,6 +43,7 @@
       desc: "Login/Signup design with a slider animation made with tailwindcss and nextjs.",
       lang: "js.png",
       src: "https://github.com/anhsirk0/slider-login-signup",
+      url: "https://anhsirk0-ts-projects.netlify.com/slider",
     },
     {
       title: "Ts-projects",
