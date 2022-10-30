@@ -8,11 +8,11 @@
       url: "https://github.com/anhsirk0",
     },
     { title: "Telegram", img: "telegram.png", url: "https://t.me/anhsirk0" },
-    {
-      title: "Reddit",
-      img: "reddit.png",
-      url: "https://reddit.com/u/anhsirk0",
-    },
+    // {
+    //   title: "Reddit",
+    //   img: "reddit.png",
+    //   url: "https://reddit.com/u/anhsirk0",
+    // },
     {
       title: "LinkedIn",
       img: "linkedin.png",
